@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge Hospital | Cancer Center</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- fontawesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@10/-bundle.min.css" />
+
+  <!-- link AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+
+  <!-- only this page swiper -->
+  <style>
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: auto;
+    }
+
+    .swiper-slide img {
+      height: 280px;
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-navmine fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="" width="150px" height="50px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="succes_storys.html">Success Stories</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="Academic.html">Academics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Centres
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="diagnosticCenter.html">Diagonstic Center</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="cancer_diagnostic.html">Cancer Center</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="heart_diagnostic.html">Heart Center</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="community_healthcare.html">Community Healthcare</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Departments
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Department.html">Help Desk</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="Registratian.html">Registration</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="DOCTORS SCHDULE.html">Doctor Schedule</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="Billing.html">Biling</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="Accounts.html">Accounts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Facility & Service
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="rooms.html">Rooms</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="icu.html">ICU</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="medical_facilities.html">Medical Facility</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="other_facilities.html">Other Facility</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="general_service.html">General Services</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="health_checkup.html">Health Checkup</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="specialities.html">Specialities</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="Query.html">Query</a></li>
+                <li>
+                  <hr class="dropdown-divider p-0 my-2" />
+                </li>
+                <li><a class="dropdown-item" href="vacancies.html">Vacancies</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- bannersection -->
+    <section style="margin-top: 5rem" class="diagnosticBanner container-fluid">
+      <div class="bannerInfo container text-center py-5 text-white text-uppercase">
+        <h1 class="Montserrat">Centers</h1>
+        <h4 class="Montserrat">Cancer Center</h4>
+      </div>
+    </section>
+
+    <!-- diagonstic tests -->
+    <section class="my-5 container">
+      <div>
+        <h2 class="color1 fontmont fw-bold text-capitalize">
+          Welcome To Our Cancer Center!
+        </h2>
+        <small class="fontmont">
+          Your Health is our top priority. Browse through our most desired tests
+          that ensure your good health.
+        </small>
+      </div>
+
+      <div class="diagnosticCards fontmont">
+        <div class="container my-5">
+          <div class="row g-2 my-5 appendedrow">
+            <!-- <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/barium.webp"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">Barium enema</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/muga.jpg"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">MUGA scan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/colon.jpeg"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">Colonoscopy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/bmarrow.webp"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">bone marrow aspiration</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/bmri.webp"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">Breast MRI</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/sigmoi.jpeg"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">Sigmoidoscopy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/nuckear.jpg"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">Nuclear medicine</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img
+                src="assets/images/pap.webp"
+                class="card-img-top" alt="..." height="200px" width="250px"/>
+              <div class="card-body text-center fw-bold">
+                <a href="#" class="card-text text-uppercase">Pap test</a>
+              </div>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our features -->
+    <section class="my-5 container">
+      <h2 class="color1 fontmont fw-bold text-capitalize">We Provide Best Services</h2>
+
+      <div class="featuresCard my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 g-2">
+              <div class="card mb-3 px-3 py-1">
+                <div class="row g-0">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <img src="cards/Ambulance-product.png" class="img-fluid rounded-start" alt="..." />
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 featurecardtextrescenter">
+                    <div class="card-body">
+                      <p class="card-title mb-0">Free Ambulance Service</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 g-2">
+              <div class="card mb-3 px-3 py-1">
+                <div class="row g-0">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <img src="cards/Trusted-Doctors.png" class="img-fluid rounded-start" alt="..." />
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 featurecardtextrescenter">
+                    <div class="card-body">
+                      <p class="card-title mb-0">Trusted By 30,000+ Doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 g-2">
+              <div class="card mb-3 px-3 py-1">
+                <div class="row g-0">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <img src="cards/Labs-product.png" class="img-fluid rounded-start" alt="..." />
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 featurecardtextrescenter">
+                    <div class="card-body">
+                      <p class="card-title mb-0">Fully Equipped Labs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 g-2">
+              <div class="card mb-3 px-3 py-1">
+                <div class="row g-0">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <img src="cards/Accurate-Reports.png" class="img-fluid rounded-start" alt="..." />
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 featurecardtextrescenter">
+                    <div class="card-body">
+                      <p class="card-title mb-0">100% Accurate Reports</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- helpline -->
+    <section class="my-5 container">
+      <div class="helpline fontmont my-5">
+        <div class="container">
+          <div class="row my-5">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div class="helplineInfo">
+                <h2 class="color1 Montserrat fw-bold">Help Line</h2>
+                <p class="text-black-50 fontmont fs-1">24/7 Helpline Services</p>
+                <p class="text-black-50 fontmont">We understand that the health needs of every patient are different,
+                  which is why at Cambridge Hospital we cover almost all specialties under one roof.</p>
+                <div class="row my-4 fontmont">
+                  <div class="col-sm-6 g-2">
+                    <div class="mb-3 px-3 py-1">
+                      <div class="row g-0">
+                        <div class="col-md-2">
+                          <img src="assets/images/1.png" class="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div class="col-md-10">
+                          <div class="card-body">
+                            <p class="card-title">Our Number</p>
+                            <p class="card-text text-black-50">+1 (234) 567 890 00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 g-2">
+                    <div class="mb-3 px-3 py-1">
+                      <div class="row g-0">
+                        <div class="col-md-2">
+                          <img src="assets/images/2.png" class="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div class="col-md-10">
+                          <div class="card-body">
+                            <p class="card-title">Appointment</p>
+                            <p class="card-text text-black-50">CmbgHospital.info@mail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <div class="helplineImg">
+                <img src="cards/banner3.jpg" class="img-fluid" alt="" srcset="" width="450px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- get quick appointment -->
+    <section class="container-fluid">
+      <div class="container text-center">
+        <h4 class="color1 fontmont fw-bold text-capitalize">Get our best doctor's Appointment on single click</h4>
+      </div>
+      <div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor1.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Dr Atta Ur rehman</p>
+                  <p class="small mb-0">Education : Phd in Medical Science</p>
+                  <p class="small mb-0">Email : Attaurrehman@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 9:00 am to 8:00 pm</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor2.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Dr Robert Adam</p>
+                  <p class="small mb-0">Education : Msc in physicology</p>
+                  <p class="small mb-0">Email : R.adam@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 11:00 am to 12:00 am</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor3.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Gilcrisht Joseph</p>
+                  <p class="small mb-0">Education : Child Specialist</p>
+                  <p class="small mb-0">Email : G.J@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 9:00 am to 8:00 pm</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor4.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Sierra Jhonson</p>
+                  <p class="small mb-0">Education : psychiatric Specialist</p>
+                  <p class="small mb-0">Email : sierrajhonson@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 10:00 am to 9:00 pm</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor5.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Dr Chris gayle</p>
+                  <p class="small mb-0">Education : Phd in Oncology</p>
+                  <p class="small mb-0">Email : c.gayle@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 9:00 am to 8:00 pm</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor6.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Dr Mike Alexender</p>
+                  <p class="small mb-0">Education : Heart Specialist</p>
+                  <p class="small mb-0">Email : Mike.alx@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 11:00 am to 12:00 am</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor7.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Benjiuman</p>
+                  <p class="small mb-0">Education : Endocrinologist</p>
+                  <p class="small mb-0">Email : BJ@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 9:00 am to 8:00 pm</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card shadow-none border-0">
+                <div class="card-header border-0">
+                  <img src="assets/images/doctors/doctor8.jpg" alt="">
+                </div>
+                <div class="card-body border-0">
+                  <p class="small mb-0">Name : Chrissy Costanza</p>
+                  <p class="small mb-0">Education : Anesthesiologist</p>
+                  <p class="small mb-0">Email : C.costanza@Cambridge.com</p>
+                  <p class="small mb-0">Timing : 10:00 am to 9:00 pm</p>
+                </div>
+                <div class="card-footer border-0">
+                  <button class="btn btn-sm btn-block w-100 btn-outline-dark" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Get Appointment <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!--          FOOTER        -->
+
+  <footer class="container-fluid">
+    <div class="row w-100 mx-auto">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>About Us</h5>
+        <ul class="nav flex-column">
+          <li class="color1"><a href="Academic.html" class="nav-link p-0 text-body">Academics</a></li>
+          <li class="color1"><a href="succes_storys.html" class="nav-link p-0 text-body">Success Stories</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+          <li class="color1"><a href="#" class="nav-link p-0 text-body">To make an appointment at Doctors Hospital
+              please use the contact details given below</a></li>
+          <br>
+          <li class="color1"><i class="fa-solid fa-phone" style="color:var(color1)">&nbsp; 01223 805000</i></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Quick links</h5>
+        <ul class="nav flex-column">
+          <li class="color1"><a href="#" class="nav-link p-0 text-body">Our blog</a></li>
+          <li class="color1"><a href="diagnosticCenter.html" class="nav-link p-0 text-body">diagnostic centre</a></li>
+
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h4>Subscribe to our newsletter</h4>
+          <p style="color:darkgrey;">Sign up for our newsletter so you can find out the latest innovation, development,
+            and news from the hospita</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2023 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="mx-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="mx-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li class="mx-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="mx-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+        <li class="mx-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+        <li class="mx-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+
+
+
+
+  <!-- modals -->
+  <div class="allmodals"></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Book Appointment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="row g-3">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2">
+                <div class="form-group">
+                  <label for="ptname" class="small text-black-50">Patient Name</label>
+                  <input class="form-control form-control-sm" type="text" id="ptname" placeholder="jhonson" required>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2">
+                <div class="form-group">
+                  <label for="ptage" class="small text-black-50">Age</label>
+                  <input class="form-control form-control-sm" type="number" id="ptage" placeholder="18 years" required>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2">
+                <div class="form-group">
+                  <label for="ptname" class="small text-black-50">Gender</label>
+                  <div class="d-flex">
+                    <div class="form-check mx-2">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check mx-2">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Female
+                      </label>
+                    </div>
+                    <div class="form-check mx-2">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Other
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2">
+                <div class="form-group">
+                  <label for="ptname" class="small text-black-50">Email</label>
+                  <input class="form-control form-control-sm" type="email" id="ptname" placeholder="abc@abc.com"
+                    required>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2">
+                <div class="form-group">
+                  <label for="ptname" class="small text-black-50">Phone Number</label>
+                  <input class="form-control form-control-sm" type="number" id="ptname" required>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-2">
+                <div class="form-group">
+                  <label for="ptname" class="small text-black-50">Date Time</label>
+                  <input class="form-control form-control-sm" type="datetime-local" id="ptname" required>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-sm-md-12 col-sm-12 mb-2">
+                <div class="form-group">
+                  <label for="ptname" class="small text-black-50">Details / Comments</label>
+                  <textarea name="" id="" cols="30" rows="10" class="form-control form-control-sm"></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary myswal">Book Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@10/-bundle.min.js"></script>
+
+  <!-- sweet alert js -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  <!-- Initialize Swiper -->
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      autoplay: {
+        delay: 1500,
+      },
+      // loop:true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+
+    });
+  </script>
+  <!-- AOS JS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+
+    $('.myswal').on('click', function () {
+      Swal.fire(
+        'Your Appointment has been Registered',
+        '',
+        'success'
+      )
+    });
+
+  </script>
+
+  <script>
+    var items = [
+      {
+        id: 1,
+        title: "Barium Enema",
+        description: "A barium enema, also known as a lower gastrointestinal (GI) series or barium enema procedure, is a medical imaging test used to examine the large intestine (colon) and rectum. This procedure involves the use of a contrast medium containing barium, a chalky white liquid, and X-ray imaging to visualize the structure and condition of the lower part of the digestive tract.",
+        image: "assets/images/barium.webp"
+      },
+      {
+        id: 2,
+        title: "Muga Scan",
+        description: "A MUGA (Multiple-Gated Acquisition) scan is a specialized nuclear medicine imaging test that is primarily used to assess the function of the heart's left ventricle, which is the main pumping chamber responsible for pumping oxygenated blood to the rest of the body. This test provides important information about the heart's ability to contract and pump blood effectively.",
+        image: "assets/images/muga.jpg"
+      },
+      {
+        id: 3,
+        title: "Colonoscopy",
+        description: "A colonoscopy is a medical procedure that allows a healthcare provider, usually a gastroenterologist, to examine the inner lining of the colon (large intestine) and the rectum. It is considered one of the most effective methods for detecting and diagnosing various gastrointestinal conditions, including colorectal cancer, polyps, and inflammatory bowel diseases.",
+        image: "assets/images/colon.jpeg"
+      },
+      {
+        id: 4,
+        title: "Bone Marrow Aspiration",
+        description: "Bone marrow aspiration is a medical procedure in which a healthcare provider collects a small sample of bone marrow for diagnostic or therapeutic purposes. Bone marrow is the spongy tissue found in the center of certain bones, such as the hipbone (pelvis), breastbone (sternum), and others. It plays a crucial role in the production of blood cells, including red blood cells, white blood cells, and platelets.",
+        image: "assets/images/bmarrow.webp"
+      },
+      {
+        id: 5,
+        title: "Breast MRI",
+        description: "Breast MRI (Magnetic Resonance Imaging) is a specialized medical imaging technique used to create detailed and highly sensitive images of the breast tissue. It is particularly valuable in the evaluation of breast health, especially in cases where other imaging methods like mammography or ultrasound may not provide sufficient information.",
+        image: "assets/images/bmri.webp"
+      },
+      {
+        id: 6,
+        title: "Sigmoidoscopy",
+        description: "Sigmoidoscopy is a medical procedure that involves the examination of the lower part of the large intestine, specifically the sigmoid colon and the rectum. It is used to diagnose and monitor various gastrointestinal conditions, including colorectal cancer, polyps, and inflammatory bowel diseases.",
+        image: "assets/images/sigmoi.jpeg"
+      },
+      {
+        id: 7,
+        title: "Nuclear Medicine",
+        description: "Nuclear medicine is a medical specialty that utilizes small amounts of radioactive materials, called radiopharmaceuticals or radiotracers, to diagnose and treat a variety of medical conditions. These radioactive substances are introduced into the body, either orally or through injection, and then their behavior is tracked using specialized imaging equipment. Nuclear medicine offers a unique approach to visualizing the body's internal structures and functions at the molecular and cellular levels. ",
+        image: "assets/images/nuckear.jpg"
+      },
+      {
+        id: 8,
+        title: "Pap Test",
+        description: "A Pap test, also known as a Pap smear, is a common medical screening procedure used to detect early signs of cervical cancer and certain abnormalities in the cervix, which is the lower part of the uterus that connects to the vagina. The Pap test is a crucial tool in women's healthcare for the early detection and prevention of cervical cancer.",
+        image: "assets/images/pap.webp"
+      },
+    ];
+
+    for (let i = 0; i < items.length; i++) {
+      $('.appendedrow').append("<div class='col-sm-6 col-md-6 col-lg-3'  data-bs-toggle='modal' data-bs-target='#diagonmodal" + items[i].id + "'>\
+        <div class='card'>\
+          <img\
+            src='"+ items[i].image + "'\
+            class='card-img-top' height='200px' width='250px'/>\
+          <div class='card-body text-center fw-bold'>\
+            <a href='#' class='cards'>"+ items[i].title + "</a>\
+          </div>\
+        </div>\
+      </div>");
+
+      $('.allmodals').append("<div class='modal fade' id='diagonmodal" + items[i].id + "' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>\
+      <div class='modal-dialog modal-dialog-centered modal-lg'>\
+        <div class='modal-content'>\
+          <div class='modal-header'>\
+            <h5 class='modal-title' id='exampleModalLabel'>"+ items[i].title + "</h5>\
+            <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>\
+          </div>\
+          <div class='modal-body'>\
+            "+ items[i].description + "\
+          </div>\
+          <div class='modal-footer'>\
+            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>\
+          </div>\
+        </div>\
+      </div>\
+    </div>");
+
+    }
+
+  </script>
+</body>
+
+</html>
